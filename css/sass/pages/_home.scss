@@ -4,11 +4,29 @@
     width: 300px;
     height: 150px;
     position: relative;
-    @include prefixer(box-shadow, 10px 10px 17px #aaa, webkit moz o ms);
+    animation: fadeinout 1s infinite linear;
+    box-shadow: 10px 10px 17px #aaa;
+    // @include prefixer(animation, fadeinout 1s infinite linear, webkit moz o ms);
+    // @include prefixer(box-shadow, 10px 10px 17px #aaa, webkit moz o ms);
     &:hover
     {
         .overlay {
             @include overlay($main-color,0.44);           
         }
+    }
+}
+
+
+@include keyFrames(fadeinout) {
+    0% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .5;
     }
 }

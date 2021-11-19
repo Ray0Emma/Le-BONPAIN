@@ -17,9 +17,17 @@
 
 // prefixes
 
-@mixin prefixer($prop, $val, $prefixes) {
-    @each $pre in $prefixes {
-        -#{$pre}-#{$prop}: $val;
-    }
-    #{$prop}: $val;
+// @mixin prefixer($prop, $val, $prefixes) {
+//     @each $pre in $prefixes {
+//         -#{$pre}-#{$prop}: $val;
+//     }
+//     #{$prop}: $val;
+// }
+
+// keyFrames
+
+@mixin keyFrames($anim-name) {
+    @keyframes #{$anim-name} {
+        @content;
+    } 
 }
