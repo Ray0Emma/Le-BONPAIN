@@ -1,0 +1,25 @@
+// @mixin minMedia {
+//     @media (min-width: 991px) {
+//         @content
+//     } 
+// }
+
+// overlay effect
+
+@mixin overlay($col,$op) {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba($col, $op);
+}
+
+// prefixes
+
+@mixin prefixer($prop, $val, $prefixes) {
+    @each $pre in $prefixes {
+        -#{$pre}-#{$prop}: $val;
+    }
+    #{$prop}: $val;
+}
