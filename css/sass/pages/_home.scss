@@ -9,7 +9,7 @@
         }
         line-height: 1.7;
         text-align: center;
-        color: rgb(58, 58, 58);
+        color: $black-color;
         width: 70%;
         margin: 30px auto;
     }
@@ -30,10 +30,38 @@
             border: 3px solid $second-color;
             &.active,
             &:hover {
-                border: 3px solid rgb(58, 58, 58);
+                border: 3px solid $black-color;
                 background-color: #f6f6f6;
             }
         }
     }
 }
 /* End Slider */
+/* Start Services */
+.service {
+    .services-para {
+        float: $float-left;
+        width: (100% / 3);
+        &:not(:last-child) {
+            padding-right: 20px;
+        }
+        .serv-title {
+            color: $black-color;
+            img {
+                position: relative;
+                top: 8px;
+                padding-right: 16px;
+            }
+
+        }
+        .serv-para {
+            color: #747474;
+            line-height: 1.5;
+        }
+        .serv-link {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
+/* End Services */
