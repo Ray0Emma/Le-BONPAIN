@@ -60,6 +60,22 @@
     }
     .contact {
         width: 25%;
+        input[type=text],
+        input[type=email],
+        textarea {
+            border: 2px solid #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 7px;
+            width: 100%;
+            &:focus {
+                border: 2px solid $main-color;
+                outline: none;
+            }
+        }
+        textarea {
+            height: 140px;
+        }
     }
     .footer-title {
         color: #262626;
