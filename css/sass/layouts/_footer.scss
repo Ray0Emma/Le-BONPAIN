@@ -3,7 +3,6 @@
     background-color: $second-color;
     overflow: hidden;
     padding-top: 30px;
-    padding-bottom: 30px;
     margin-top: 50px;
     .gallery, .details, .contact {
         float: $float-left;
@@ -17,7 +16,7 @@
                 margin-left: 2px;
                 margin-top: 2px;
                 border: 5px solid $second-color;
-                box-shadow: 0px 0px 1px 1px #747474;
+                box-shadow: 0px 0px 1px 1px $text-color;
             }
             .para {
                 float: $float-left;
@@ -30,7 +29,7 @@
                 }
                 p {
                     margin-top: 10px;
-                    color: #747474;
+                    color: $text-color;
                     line-height: 1.5;
                 }
             }
@@ -42,7 +41,7 @@
     .details {
         width: 25%;
         li, p {
-            color: #747474;
+            color: $text-color;
             line-height: 1.4;
         }
         li {
@@ -51,7 +50,7 @@
             }
         }
         .hours {
-            color: #747474;
+            color: $text-color;
             margin-bottom: 0px;
         }
         p {
@@ -80,6 +79,19 @@
     .footer-title {
         color: #262626;
         font-weight: lighter;
+    }
+    .copyright {
+        padding: 25px 0px;
+        border-top: 1px solid #c7c4c4;
+        overflow: hidden;
+        .developer, .designer {
+            float: $float-left;
+            color: $text-color;
+            width: 50%;
+        }
+        .designer {
+            text-align: $text-right;
+        }
     }
 }
 /* Footer End */
