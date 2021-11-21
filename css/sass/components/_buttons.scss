@@ -1,0 +1,14 @@
+.main-button {
+    background-color: rgba($main-color, 0.8);
+    color: #ffffff;
+    border: none;
+    padding: 8px 6px;
+    text-align: center;
+    min-width: 100px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        background-color: $main-color;
+    }
+}

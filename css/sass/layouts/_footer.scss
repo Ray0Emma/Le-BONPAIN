@@ -1,0 +1,49 @@
+/* Footer Section */
+.footer {
+    background-color: $second-color;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    .gallery, .details, .contact {
+        float: $float-left;
+        .img-box {
+            overflow: hidden;
+            margin-bottom: 25px;
+            img {
+                float: $float-left;
+                width: 150px;
+                height: 150px;
+            }
+            .para {
+                float: $float-left;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: calc( 100% - 180px);
+                h4 {
+                    color: $main-color;
+                    margin: 25px 0px 5px;
+                }
+                p {
+                    margin-top: 10px;
+                    color: #747474;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+    .gallery {
+        width: 50%;
+    }
+    .details {
+        width: 25%;
+    }
+    .contact {
+        width: 25%;
+    }
+    .footer-title {
+        color: #262626;
+        font-weight: lighter;
+    }
+}
+/* Footer End */
