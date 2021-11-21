@@ -12,8 +12,12 @@
             margin-bottom: 25px;
             img {
                 float: $float-left;
-                width: 150px;
-                height: 150px;
+                width: 130px;
+                height: 130px;
+                margin-left: 2px;
+                margin-top: 2px;
+                border: 5px solid $second-color;
+                box-shadow: 0px 0px 1px 1px #747474;
             }
             .para {
                 float: $float-left;
@@ -22,7 +26,7 @@
                 width: calc( 100% - 180px);
                 h4 {
                     color: $main-color;
-                    margin: 25px 0px 5px;
+                    margin: 20px 0px 5px;
                 }
                 p {
                     margin-top: 10px;
@@ -37,6 +41,22 @@
     }
     .details {
         width: 25%;
+        li, p {
+            color: #747474;
+            line-height: 1.4;
+        }
+        li {
+            .email {
+                color: $main-color;
+            }
+        }
+        .hours {
+            color: #747474;
+            margin-bottom: 0px;
+        }
+        p {
+            margin-top: 3px;
+        }
     }
     .contact {
         width: 25%;
