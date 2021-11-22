@@ -45,12 +45,24 @@
         &:not(:last-of-type) {
             margin-right: 3%;
         }
+        @media #{$max-mobile} {
+            width: 100%;
+            float: none;
+        }
         .serv-title {
             color: $black-color;
             img {
                 position: relative;
                 top: 8px;
                 padding-right: 16px;
+
+                @media #{$max-mobile} {
+                    display: block;
+                    margin-bottom: 19px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-right: 0;
+                }
             }
 
         }

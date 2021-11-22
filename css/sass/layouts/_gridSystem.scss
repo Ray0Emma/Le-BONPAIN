@@ -25,3 +25,9 @@
 .clearfix {
     clear: both;
 }
+
+.text-center-xs {
+    @media #{$max-mobile} {
+        text-align: center;
+    }
+}
