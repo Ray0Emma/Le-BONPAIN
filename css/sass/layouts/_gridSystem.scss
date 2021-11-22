@@ -3,12 +3,23 @@
     // @include prefixer(box-sizing, border-box, webkit moz);
 }
 .container {
-    width: 1200px;
     margin: auto;
     padding-left: 15px;
     padding-right: 15px;
     position: relative;
     user-select: none;
+    @media #{$min-small}
+    {
+        width: 768px;
+    }
+    @media #{$min-medium}
+    {
+        width: 992px;
+    }
+    @media #{$min-large}
+    {
+        width: 1200px;
+    }
 }
 
 .clearfix {

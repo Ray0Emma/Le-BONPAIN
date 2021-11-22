@@ -1,6 +1,8 @@
-$max-mobile: 767px;
-$max-small: 991px;
-$min-small: 768px;
+$max-mobile: '(max-width: 767px)';
+$max-small: '(min-width: 991px)';
+$min-small: '(min-width: 768px)';
+$min-medium: '(min-width: 992px)';
+$min-large: '(min-width: 1200px)';
 
 $main-color: #e2494c;
 $second-color: #e2e2e2;

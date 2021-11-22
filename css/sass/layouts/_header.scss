@@ -3,9 +3,23 @@
     overflow: hidden;
     border-bottom: 1px solid $second-color;
     .logo{
-        width: 30%;
-        float: $float-left;
+        position: relative;
         color: #504d4d;
+        @media #{$min-small} {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        @media #{$min-medium} {
+            width: 30%;
+            float: $float-left;
+            text-align: $text-left;
+        }
+        // @media #{$max-mobile} {
+        //     width: 70%;
+        //     float: $float-left;
+        //     text-align: $text-left;
+        // }
         h1 {
             margin-top: 10px;
             margin-bottom: 0;
@@ -16,15 +30,36 @@
         }
     }
     .navbar{
+        overflow: hidden;
         width: 70%;
         float: $float-left;
         background-color: $main-color;
         border-radius: 15px;
+        @media #{$min-small} {
+            width: 100%;
+            float: none;
+            margin-top: 30px;
+        }
+        @media #{$min-medium} {
+            width: 70%;
+            float: $float-left;
+            text-align: $text-left;
+            margin-top: 16px;
+        }
+        @media #{$max-mobile} {
+            width: 100%;
+            display: none;
+            border-radius: 0;
+        }
         li {
             width: 20%;
             float: $float-left;
             font-size: 20px;
             text-align: center;
+            @media #{$max-mobile} { 
+                display: block; 
+                float: none;
+            }
             a {
                 display: block;
                 padding: 20px 10px;
@@ -33,6 +68,9 @@
                 &:hover {
                     color: rgba(rgb(253, 216, 216),0.7);
                 }
+                // @media #{$max-mobile} {
+                //     color: #504d4d;
+                // }
             }
         }
     }

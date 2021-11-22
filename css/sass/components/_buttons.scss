@@ -12,3 +12,26 @@
         background-color: $main-color;
     }
 }
+
+.btn-toggle {
+    background-color: $main-color;
+    border: none;
+    padding: 8px;
+    position: absolute;
+    top: 9px;
+    right: 2px;
+    display: none;
+    outline: none;
+    @media #{$max-mobile} { 
+        display: block; 
+    }
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
