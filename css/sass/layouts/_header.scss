@@ -1,5 +1,5 @@
 .header {
-    padding: 20px;
+    padding: 20px 0px;
     overflow: hidden;
     border-bottom: 1px solid $second-color;
     .logo{
@@ -15,11 +15,6 @@
             float: $float-left;
             text-align: $text-left;
         }
-        // @media #{$max-mobile} {
-        //     width: 70%;
-        //     float: $float-left;
-        //     text-align: $text-left;
-        // }
         h1 {
             margin-top: 10px;
             margin-bottom: 0;
@@ -68,9 +63,6 @@
                 &:hover {
                     color: rgba(rgb(253, 216, 216),0.7);
                 }
-                // @media #{$max-mobile} {
-                //     color: #504d4d;
-                // }
             }
         }
     }
