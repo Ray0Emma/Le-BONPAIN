@@ -51,6 +51,9 @@
     }
     .details {
         // width: 25%;
+        @media #{$max-mobile} {
+            width: 100%;
+        }
         @media #{$min-small} {
             width: 50%;
         }
