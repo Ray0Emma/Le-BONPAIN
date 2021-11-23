@@ -145,6 +145,13 @@
         &:not(:last-of-type) {
             margin-right: 2%;
         }
+        @media #{$max-mobile} {
+            width: (100%);
+            margin-bottom: 30px;
+            &:not(:last-of-type) {
+                margin-right: 0;
+            }
+        }
         img {
             max-width: 100%;
         }
