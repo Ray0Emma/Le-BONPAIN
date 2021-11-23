@@ -1,2 +1,138 @@
+@import "sass/helpers/variables";
+
 $float-right: left;
 $float-left: right;
+$text-right: left;
+$text-left: right;
+
+.header {
+    .logo{
+        @media #{$min-medium} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+        .btn-toggle {
+            left: 9px;
+            right: auto;
+        }
+    }
+    .navbar{
+        float: $float-left;
+        @media #{$min-medium} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+        li {
+            float: $float-left;
+        }
+    }
+}
+
+/* Start Services */
+.service {
+    .services-para {
+        float: $float-left;
+    }
+}
+/* End Services */
+/* Start Team */
+.team {
+    .team-para {
+        @media #{$min-small} {
+            float: $float-left;
+            &:last-of-type {
+                transform:translateX(-50%);
+            }
+        }
+        @media #{$min-medium} {
+            text-align: $text-left;
+            &:not(:last-of-type) {
+                margin-right: 0%;
+                margin-left: 3%;
+            }
+            &:last-of-type {      
+                transform:translateX(0%);
+            }
+            &:nth-child(4n) {
+                margin-left: 0;
+            }
+        }
+        @media #{$min-large} {
+            &:nth-child(4n) {
+                margin-right: 0%;
+                margin-left: 3%;
+            }
+        }
+    }
+}
+/* End Team */
+/* Start Lorem */
+.lorem {
+    .lorem-para {
+        float: $float-left;
+        &:not(:last-of-type) {
+            margin-left: 2%;
+            margin-right: 0%;
+        }
+    }
+}
+/* End Lorem */
+/* Footer Section */
+.footer {
+    .gallery, .details, .contact {
+        float: $float-left;
+        .img-box {
+            img {
+                @media #{$min-small} {
+                    float: $float-left;
+                    margin-right: 2px;
+                }
+            }
+            .para {
+                @media #{$min-small} {
+                    float: $float-left;
+                }
+            }
+        }
+    }
+    .details {
+        // width: 25%;
+        @media #{$min-small} {
+            width: 50%;
+        }
+        @media #{$min-medium} {
+            width: 25%;
+        }
+        li, p {
+            color: $text-color;
+            line-height: 1.4;
+        }
+        li {
+            .email {
+                color: $main-color;
+            }
+        }
+        .hours {
+            color: $text-color;
+            margin-bottom: 0px;
+        }
+        p {
+            margin-top: 3px;
+        }
+    }
+       
+    .copyright {
+        .developer, .designer {
+            float: $float-left;
+            color: $text-color;
+        }
+        .designer {
+            text-align: $text-right;
+            @media #{$max-mobile} {
+                text-align: center;
+            }
+        }
+    }
+}
+/* Footer End */
+
