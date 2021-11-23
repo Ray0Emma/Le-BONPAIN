@@ -112,9 +112,17 @@
             float: $float-left;
             color: $text-color;
             width: 50%;
+            @media #{$max-mobile} {
+                width: (100%);
+                float: none;
+            }
         }
         .designer {
             text-align: $text-right;
+            @media #{$max-mobile} {
+                margin-top: 10px;
+                text-align: center;
+            }
         }
     }
 }

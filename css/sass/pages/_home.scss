@@ -7,6 +7,9 @@
             weight: bold;
             family: fangsong;
         }
+        @media #{$max-mobile} {
+            font-size: 17px;
+        }
         line-height: 1.7;
         text-align: center;
         color: $black-color;
