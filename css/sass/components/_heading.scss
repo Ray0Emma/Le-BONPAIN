@@ -10,6 +10,9 @@
         font-weight: lighter;
         padding: 5px 15px;
         text-transform: uppercase;
+        @media #{$max-mobile} {
+            max-width: 300px;
+        }
         &::before {
             content: '';
             width: 100%;

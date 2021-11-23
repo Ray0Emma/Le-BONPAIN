@@ -23,6 +23,15 @@
         p {
             margin-top: 10px;
         }
+        @media #{$max-mobile} {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 10px;
+                margin-top: 8px;
+            }
+        }
     }
     .navbar{
         overflow: hidden;
@@ -54,6 +63,7 @@
             @media #{$max-mobile} { 
                 display: block; 
                 float: none;
+                width: 100%;
             }
             a {
                 display: block;

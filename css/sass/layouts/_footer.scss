@@ -10,19 +10,24 @@
             overflow: hidden;
             margin-bottom: 25px;
             img {
-                float: $float-left;
+                @media #{$min-small} {
+                    float: $float-left;
+                    margin-left: 2px;
+                    margin-bottom: 2px;
+                }
+                margin-top: 2px;
                 width: 130px;
                 height: 130px;
-                margin-left: 2px;
-                margin-top: 2px;
                 border: 5px solid $second-color;
                 box-shadow: 0px 0px 1px 1px $text-color;
             }
             .para {
-                float: $float-left;
-                margin-right: 15px;
-                margin-left: 15px;
-                width: calc( 100% - 180px);
+                @media #{$min-small} {
+                    float: $float-left;
+                    margin-right: 15px;
+                    margin-left: 15px;
+                    width: calc( 100% - 180px);
+                }
                 h4 {
                     color: $main-color;
                     margin: 20px 0px 5px;
@@ -36,10 +41,22 @@
         }
     }
     .gallery {
-        width: 50%;
+        // width: 50%;
+        @media #{$min-small} {
+            width: 100%;
+        }
+        @media #{$min-medium} {
+            width: 50%;
+        }
     }
     .details {
-        width: 25%;
+        // width: 25%;
+        @media #{$min-small} {
+            width: 50%;
+        }
+        @media #{$min-medium} {
+            width: 25%;
+        }
         li, p {
             color: $text-color;
             line-height: 1.4;
@@ -58,7 +75,13 @@
         }
     }
     .contact {
-        width: 25%;
+        // width: 25%;
+        @media #{$min-small} {
+            width: 50%;
+        }
+        @media #{$min-medium} {
+            width: 25%;
+        }
         input[type=text],
         input[type=email],
         textarea {
@@ -84,6 +107,7 @@
         padding: 25px 0px;
         border-top: 1px solid #c7c4c4;
         overflow: hidden;
+        margin-top: 30px;
         .developer, .designer {
             float: $float-left;
             color: $text-color;
