@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor/normalize.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
+    <link href="css/slick/slick.css" rel="stylesheet">
     <title>Sass Template</title>
 </head>
 <body unselectable="on">
@@ -41,7 +40,7 @@
             <div class="slider-img">
                 <img src="images/slider/andy-li-RndRFJ1v1kk-unsplash.jpg" alt="">
                 <img src="images/slider/ekaterina-tyapkina-b5kN9ClBRNU-unsplash.jpg" alt="">
-                <img src="images/slider/roman-kraft-P8zDQz8Y2Vc-unsplash.jpg" alt="">
+                <img src="images/slider/james-harris-RXySkOTi3kk-unsplash.jpg" alt="">
             </div>
             <!-- <ul class="bullets">
                 <li class="active"></li>
@@ -126,7 +125,7 @@
                 <h2>Lorem Ipsum</h2>
             </div>
             <div class="lorem-para text-center-xs" >
-                <img src="images/lorem/james-harris-RXySkOTi3kk-unsplash.jpg" alt="John Doe">
+                <img src="images/lorem/angelo-pantazis-2-U0A2tNYhM-unsplash.jpg" alt="John Doe">
             </div>
             <div class="lorem-para text-center-xs">
                 <img src="images/lorem/pierre-gui-1GeTpL5FJvY-unsplash.jpg" alt="John Doe">
@@ -200,18 +199,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 	</script>
-    <script src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js">
 	</script> 
+    <script src="js/main.js"></script>
 	<script>
-        $(window).resize(function() {
-                  $('.slider-img').slick('resize');
-              });
 	       $(document).ready(function(){
 	          $('.slider-img').slick({
                   arrows: false,
 	              autoplay: true,
-	              autoplaySpeed: 2000
+	              autoplaySpeed: 2000,
+                  adaptiveHeight: true
 	          });
 	       });
 	</script>
