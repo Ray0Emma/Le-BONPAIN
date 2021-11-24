@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" rel="stylesheet">
     <title>Sass Template</title>
 </head>
 <body unselectable="on">
@@ -22,7 +24,7 @@
             </div>
             <ul class="navbar">
                 <li><a href="#">Homepage</a></li>
-                <li><a href="/index-rtl.html">Arabic Version</a></li>
+                <li><a href="/index-rtl.html">Arabic</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Delivery</a></li>
                 <li><a href="#">Locations</a></li>
@@ -36,20 +38,18 @@
             <blockquote cite="http://www.worldwildlife.org/who/index.html">
                 “ You don't have to love cooking to cook, but you have to do more than love baking to bake. You have to bake out of love „
             </blockquote>
-            <div class="slider">
+            <div class="slider-img">
                 <img src="images/slider/andy-li-RndRFJ1v1kk-unsplash.jpg" alt="">
-                <!-- <img src="images/slider.png" alt="">
-                <img src="images/slider.png" alt="">
-                <img src="images/slider.png" alt="">
-                <img src="images/slider.png" alt=""> -->
+                <img src="images/slider/ekaterina-tyapkina-b5kN9ClBRNU-unsplash.jpg" alt="">
+                <img src="images/slider/roman-kraft-P8zDQz8Y2Vc-unsplash.jpg" alt="">
             </div>
-            <ul class="bullets">
+            <!-- <ul class="bullets">
                 <li class="active"></li>
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
-            </ul>
+            </ul> -->
         </div>
     </div>
     <!-- End Slider -->
@@ -198,7 +198,22 @@
     </div>
     <!-- End Footer -->
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
     <script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js">
+	</script> 
+	<script>
+        $(window).resize(function() {
+                  $('.slider-img').slick('resize');
+              });
+	       $(document).ready(function(){
+	          $('.slider-img').slick({
+                  arrows: false,
+	              autoplay: true,
+	              autoplaySpeed: 2000
+	          });
+	       });
+	</script>
 </body>
 </html>

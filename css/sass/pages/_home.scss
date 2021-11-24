@@ -20,24 +20,24 @@
         min-width: 100%;
         max-width: 100%;
     }
-    .bullets {
-        text-align: center;
-        li {
-            // to take page direction
-            display: inline-block;
-            cursor: pointer;
-            width: 12px;
-            height: 12px;
-            background-color: $second-color;
-            border-radius: 50%;
-            border: 3px solid $second-color;
-            &.active,
-            &:hover {
-                border: 2.5px solid $black-color;
-                background-color: #f6f6f6;
-            }
-        }
-    }
+    // .bullets {
+    //     text-align: center;
+    //     li {
+    //         // to take page direction
+    //         display: inline-block;
+    //         cursor: pointer;
+    //         width: 12px;
+    //         height: 12px;
+    //         background-color: $second-color;
+    //         border-radius: 50%;
+    //         border: 3px solid $second-color;
+    //         &.active,
+    //         &:hover {
+    //             border: 2.5px solid $black-color;
+    //             background-color: #f6f6f6;
+    //         }
+    //     }
+    // }
 }
 /* End Slider */
 /* Start Services */
