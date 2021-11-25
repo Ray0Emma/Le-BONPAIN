@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main_rtl.css">
     <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link href="css/slick/slick.css" rel="stylesheet">
     <title>Sass Template RTL</title>
 </head>
 <body unselectable="on">
@@ -39,8 +40,8 @@
             </blockquote>
             <div class="slider-img">
                 <img src="images/slider/andy-li-RndRFJ1v1kk-unsplash.jpg" alt="">
-                <!-- <img src="images/slider/ekaterina-tyapkina-b5kN9ClBRNU-unsplash.jpg" alt="">
-                <img src="images/slider/james-harris-RXySkOTi3kk-unsplash.jpg" alt=""> -->
+                <img src="images/slider/ekaterina-tyapkina-b5kN9ClBRNU-unsplash.jpg" alt="">
+                <img src="images/slider/james-harris-RXySkOTi3kk-unsplash.jpg" alt="">
             </div>
             <!-- <ul class="bullets">
                 <li class="active"></li>
@@ -228,13 +229,13 @@
     <script src="js/main.js"></script>
 	<script>
 	       $(document).ready(function(){
-	        //   $('.slider-img').slick({
-            //       arrows: false,
-	        //       autoplay: true,
-	        //       autoplaySpeed: 2000,
-            //       rtl: true,
-            //       adaptiveHeight: true
-	        //   });
+              $('.slider-img').attr('dir', 'ltr');
+	          $('.slider-img').slick({
+                  arrows: false,
+                  autoplay: true,
+	              autoplaySpeed: 2000,
+                  adaptiveHeight: true
+	          });
 	       });
 	</script>
 </body>
