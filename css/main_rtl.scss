@@ -32,6 +32,19 @@ $text-left: right;
 .service {
     .services-para {
         float: $float-left;
+        &:not(:last-of-type) {
+            margin-left: 3%;
+            margin-right: 0%;
+        }
+        .serv-title {
+            img {
+                padding-left: 16px;
+                padding-right: 0px;
+                @media #{$max-mobile} {
+                    padding-left: 0;
+                }
+            }
+        }
     }
 }
 /* End Services */
