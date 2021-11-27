@@ -1,4 +1,4 @@
-# Bakery-landing-page
+# Le BONPAIN
 
 I was practicing SASS by making This Simple project. It's a Bakery landing page.
 
