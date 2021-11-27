@@ -16,7 +16,7 @@
 
 To get a local copy of the repository please run the following commands on your terminal:
 
-`git clone git@github.com:ray0emma/bakery-landing-page.git`
+`git clone https://github.com/Ray0Emma/Bakery-landing-page.git`
 
 ## Live Demo
 
