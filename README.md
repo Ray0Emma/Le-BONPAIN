@@ -22,7 +22,7 @@ To get a local copy of the repository please run the following commands on your 
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/nikoescobal/tnw-clone/044aab6fe44927299ba33c5a3f5e9dea0f72c2a7/index.html)
+[Live Demo Link](https://lebonpain.netlify.app)
 
 ## Authors
 
