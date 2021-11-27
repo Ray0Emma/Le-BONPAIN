@@ -1,5 +1,7 @@
 # Bakery-landing-page
 
+I was practicing SASS by making This Simple project. It's a Bakery landing page.
+
 ## Features
 
 - Fully Responsive
